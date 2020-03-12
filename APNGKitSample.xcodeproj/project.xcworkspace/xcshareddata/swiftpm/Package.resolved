@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "APNGKit",
+        "repositoryURL": "https://github.com/onevcat/APNGKit",
+        "state": {
+          "branch": null,
+          "revision": "df003ea6cf9df19a97cff311be23d552a9cde717",
+          "version": "1.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

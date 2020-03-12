@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		4A82B8302419EB2A00BA710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A82B82E2419EB2A00BA710D /* Main.storyboard */; };
 		4A82B8322419EB2B00BA710D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A82B8312419EB2B00BA710D /* Assets.xcassets */; };
 		4A82B8352419EB2B00BA710D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A82B8332419EB2B00BA710D /* LaunchScreen.storyboard */; };
+		4A82B85A2419EC9D00BA710D /* APNGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4A82B8592419EC9D00BA710D /* APNGKit */; };
+		4ACE17AA2419EE37008113D7 /* elephant.apng in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE17A92419EE37008113D7 /* elephant.apng */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		4A82B8312419EB2B00BA710D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A82B8342419EB2B00BA710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A82B8362419EB2B00BA710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACE17A92419EE37008113D7 /* elephant.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = elephant.apng; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A82B85A2419EC9D00BA710D /* APNGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				4A82B82A2419EB2A00BA710D /* SceneDelegate.swift */,
 				4A82B82C2419EB2A00BA710D /* ViewController.swift */,
 				4A82B82E2419EB2A00BA710D /* Main.storyboard */,
+				4ACE17A92419EE37008113D7 /* elephant.apng */,
 				4A82B8312419EB2B00BA710D /* Assets.xcassets */,
 				4A82B8332419EB2B00BA710D /* LaunchScreen.storyboard */,
 				4A82B8362419EB2B00BA710D /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = APNGKitSample;
+			packageProductDependencies = (
+				4A82B8592419EC9D00BA710D /* APNGKit */,
+			);
 			productName = APNGKitSample;
 			productReference = 4A82B8252419EB2A00BA710D /* APNGKitSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 4A82B81C2419EB2A00BA710D;
+			packageReferences = (
+				4A82B8582419EC9D00BA710D /* XCRemoteSwiftPackageReference "APNGKit" */,
+			);
 			productRefGroup = 4A82B8262419EB2A00BA710D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACE17AA2419EE37008113D7 /* elephant.apng in Resources */,
 				4A82B8352419EB2B00BA710D /* LaunchScreen.storyboard in Resources */,
 				4A82B8322419EB2B00BA710D /* Assets.xcassets in Resources */,
 				4A82B8302419EB2A00BA710D /* Main.storyboard in Resources */,
@@ -338,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A82B8582419EC9D00BA710D /* XCRemoteSwiftPackageReference "APNGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/APNGKit";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A82B8592419EC9D00BA710D /* APNGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A82B8582419EC9D00BA710D /* XCRemoteSwiftPackageReference "APNGKit" */;
+			productName = APNGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A82B81D2419EB2A00BA710D /* Project object */;
 }
